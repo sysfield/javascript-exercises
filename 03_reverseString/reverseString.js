@@ -1,10 +1,10 @@
 const reverseString = function(string) {
     var newString = [];
-    for (var i = string.length; i > 0; i--)
+    for (var i = string.length; i > -1; i--)
     {
-        newString.unshift(string[i]);
+        newString.push(string[i]);
     }
-    return newString;
+    return newString.join('');
 };
 
 // Do not edit below this line

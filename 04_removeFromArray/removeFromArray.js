@@ -1,12 +1,13 @@
-const removeFromArray = function(...rest) {
+const removeFromArray = function(array, ...rest) {
     for (const arg of rest)
     {
-        if (rest.find(arg))
+        if (array.includes(arg))
         {
-            var x = rest.indexOf(arg);
-            rest.splice(x, 1);
+            var x = array.indexOf(arg);
+            array.splice(x, 1);
         }
     }
+    return array;
 };
 
 // Do not edit below this line

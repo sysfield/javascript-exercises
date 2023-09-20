@@ -7,7 +7,7 @@ const convertToCelsius = function(fahrenheit) {
 };
 
 const convertToFahrenheit = function(celsius) {
-  return Number.parseFloat((celsius * (9/5)) + 32).toFixed(1);
+  return parseFloat(Number.parseFloat((celsius * (9/5)) + 32).toFixed(1));
 };
 
 // Do not edit below this line

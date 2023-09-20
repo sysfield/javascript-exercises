@@ -1,9 +1,9 @@
 const convertToCelsius = function(fahrenheit) {
-  if (Number.parseInt((fahrenheit - 32) * (5/9)).toFixed(1) == 0.0)
+  if (Number.parseFloat((fahrenheit - 32) * (5/9)).toFixed(1) == 0.0)
   {
     return 0;
   }
-  return Number.parseInt((fahrenheit - 32) * (5/9)).toFixed(1);
+  return parseFloat(Number.parseFloat((fahrenheit - 32) * (5/9)).toFixed(1));
 };
 
 const convertToFahrenheit = function(celsius) {

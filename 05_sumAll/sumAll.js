@@ -6,6 +6,12 @@ const sumAll = function(first, final) {
         final = first;
         first = x;
     }
+
+    if (first < 0 || final < 0)
+    {
+        return 'ERROR'
+    }
+
     for (var i = first; i < final + 1; i++)
     {
         sum += i;

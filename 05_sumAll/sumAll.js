@@ -7,7 +7,7 @@ const sumAll = function(first, final) {
         first = x;
     }
 
-    if (first < 0 || final < 0)
+    if (first < 0 || final < 0 || !Number.isInteger(first) || !Number.isInteger(final))
     {
         return 'ERROR'
     }
